@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "62292712891",
+    "project_id": "twople-5428f",
+    "storage_bucket": "twople-5428f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62292712891:android:e2038b6f8191009bbb389e",
+        "android_client_info": {
+          "package_name": "com.arjavs.twople"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62292712891-7p6v3gn9sggvmfjkajrsj9nhhi9tcdjg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arjavs.twople",
+            "certificate_hash": "2e4efaf9f02079fc95aa4d17c01bf540616b054b"
+          }
+        },
+        {
+          "client_id": "62292712891-gcio9tloc7gmja1pi7oh39hhetcsv8k1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arjavs.twople",
+            "certificate_hash": "eab05bf9db76c753cba527b63b55fa9ab641fa35"
+          }
+        },
+        {
+          "client_id": "62292712891-nrf8mfif42bq5jd00gjsfnm808fn9ce0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arjavs.twople",
+            "certificate_hash": "77d21894d9a15bb9917e0e78f804c275ef3f9a9b"
+          }
+        },
+        {
+          "client_id": "62292712891-s0odtbh1l7cqbt24qnvo5jevmeoibmuo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFaWg-NrmtAtpU-vXcgTaeU16O5Jd5Zg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62292712891-s0odtbh1l7cqbt24qnvo5jevmeoibmuo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "62292712891-3qbailnm880k6pd6eoj84v2u3negol14.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.arjavs.twople"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62292712891:android:68fef553726dd684bb389e",
+        "android_client_info": {
+          "package_name": "com.example.twople_dashboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62292712891-s0odtbh1l7cqbt24qnvo5jevmeoibmuo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFaWg-NrmtAtpU-vXcgTaeU16O5Jd5Zg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62292712891-s0odtbh1l7cqbt24qnvo5jevmeoibmuo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "62292712891-3qbailnm880k6pd6eoj84v2u3negol14.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.arjavs.twople"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
