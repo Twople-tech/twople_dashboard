@@ -7,7 +7,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:62292712891:android:e2038b6f8191009bbb389e",
+        "mobilesdk_app_id": "1:62292712891:android:e0acd3a5da8e7b22bb389e",
         "android_client_info": {
           "package_name": "com.arjavs.twople"
         }
@@ -27,14 +27,6 @@
           "android_info": {
             "package_name": "com.arjavs.twople",
             "certificate_hash": "eab05bf9db76c753cba527b63b55fa9ab641fa35"
-          }
-        },
-        {
-          "client_id": "62292712891-nrf8mfif42bq5jd00gjsfnm808fn9ce0.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.arjavs.twople",
-            "certificate_hash": "77d21894d9a15bb9917e0e78f804c275ef3f9a9b"
           }
         },
         {
@@ -67,9 +59,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:62292712891:android:68fef553726dd684bb389e",
+        "mobilesdk_app_id": "1:62292712891:android:32194146e45abb0bbb389e",
         "android_client_info": {
-          "package_name": "com.example.twople_dashboard"
+          "package_name": "com.arjavs.twople_dashboard"
         }
       },
       "oauth_client": [
