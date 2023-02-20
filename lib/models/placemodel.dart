@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:twople_dashboard/screens/addplace.dart';
 
 List<String> days = [
   "Mon",
@@ -41,12 +40,12 @@ class PlaceObj {
   final String videoLink;
   final List<dynamic> category, moods, prefs;
   final String cost;
-  // final bool isProvider;
-  // final bool customProvider;
+  final double filterCost;
   final String partnership;
   final List<dynamic> days;
   final List<dynamic> timings;
   final String bookingUrl;
+  final String experienceRatings;
 
   PlaceObj({
     required this.id,
@@ -62,12 +61,12 @@ class PlaceObj {
     required this.moods,
     required this.prefs,
     required this.cost,
-    // required this.isProvider,
-    // required this.customProvider,
+    required this.filterCost,
     required this.partnership,
     required this.days,
     required this.timings,
     required this.bookingUrl,
+    required this.experienceRatings,
   });
 
   factory PlaceObj.fromFB(QueryDocumentSnapshot<Map<String, dynamic>> e) {
@@ -94,17 +93,14 @@ class PlaceObj {
       itn: e.data()["experienceItinerary"],
       lat: double.parse(e.data()["googleLocation"].toString().split(",")[0]),
       long: double.parse(e.data()["googleLocation"].toString().split(",")[1]),
-      // isProvider: e.data()["experiencePartnership"] != "",
       imgLink: e.data()["experienceImage"],
       videoLink: e.data()["videoLink"],
       cost: e.data()["experienceCost"],
+      filterCost: e.data()["filterCost"],
       category: cat,
       moods: mood,
       prefs: pref,
       about: e.data()["experienceDescription"],
-      // customProvider: !["No", ""].contains(
-      // e.data()["experiencePartnership"],
-      // ),
       partnership: e["experiencePartnership"],
       days: ((e["experienceDays"].isNotEmpty && e["experienceDays"][0] == "")
           ? []
@@ -114,28 +110,7 @@ class PlaceObj {
           ? []
           : e["experienceTimings"]),
       bookingUrl: e["bookingUrl"],
+      experienceRatings: e["experienceRatings"].toString(),
     );
   }
-  // factory PlaceObj.fromF(DocumentSnapshot<Map<String, dynamic>> e) {
-  //   return PlaceObj(
-  //     id: e.id,
-  //     name: e.data()!["experienceName"],
-  //     location: e["experienceLocation"],
-  //     itn: e["experienceItinerary"],
-  //     lat: double.parse(e["googleLocation"].toString().split(",")[0]),
-  //     long: double.parse(e["googleLocation"].toString().split(",")[1]),
-  //     isProvider: e["experiencePartnership"] != "",
-  //     imgLink: e["experienceImage"],
-  //     videoLink: e["videoLink"],
-  //     cost: e["experienceCost"],
-  //     category: [],
-  //     about: e["experienceDescription"],
-  //     customProvider: !["No", ""].contains(
-  //       e["experiencePartnership"],
-  //     ),
-  //     days: (e["experienceDays"][0] == "") ? [] : e["experienceDays"],
-  //     timings: (e["experienceTimings"][0] == "") ? [] : e["experienceTimings"],
-  //     bookingUrl: e["bookingUrl"],
-  //   );
-  // }
 }

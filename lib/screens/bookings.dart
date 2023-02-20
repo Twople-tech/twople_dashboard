@@ -181,7 +181,7 @@ class _BookTileState extends State<BookTile> {
         ),
         title: Text(widget.data["name"]),
         subtitle: Text(
-          "${widget.data["userName"]}\n${widget.data["userNumber"]}\n${widget.data["slotTime"]}\n${widget.data["paymentTime"].toString().substring(0, 16)}",
+          "${widget.data["userName"]}\n${widget.data["userNumber"]}\n${widget.data["bookingDate"]} ${widget.data["slotTime"]}\n${widget.data["paymentTime"].toString().substring(0, 16)}",
         ),
         trailing: IconButton(
           onPressed: () {
