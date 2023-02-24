@@ -108,6 +108,7 @@ class _CreateExperienceState extends State<CreateExperience> {
                       "experiencePartnership": ps,
                       "experienceImage": imgLink.text,
                       "experienceCost": cost.text,
+                      "dateAdded": DateTime.now(),
                       "filterCost": double.parse(
                           cost.text.replaceAll("INR ", "").replaceAll(",", "")),
                       "experienceDescription": des.text,
